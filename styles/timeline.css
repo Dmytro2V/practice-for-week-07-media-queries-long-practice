@@ -95,7 +95,8 @@
 }
 
 /* Your code here */
-
+/* in fact it looks ok even without transform/width bonus modification*/
+@media print {
     .timeline {
         min-width: 0;            
     }
@@ -109,4 +110,4 @@
         width: 150%;
         
     }
-    
+}
