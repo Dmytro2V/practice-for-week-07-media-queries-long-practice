@@ -3,9 +3,11 @@ body {
     color: #E8EFF0;
     text-align: center;
 }
+
 img {
     width: 50%;
 }
+
 a {
     color: #E8EFF0;
 }
@@ -19,3 +21,35 @@ a.backButton {
 }
 
 /* Your code here */
+@media print {
+    a.backButton {
+        display: none;
+    }
+
+    .notPrinted {
+        display: none;
+    }
+
+    h1+img {
+        width: 100%;
+    }
+
+    body {
+        background-color: white;
+        position: relative;
+    }
+
+    h1 {
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    img+p {
+        position: absolute;
+        left: 50%;
+        top: 95%;
+        transform: translate(-50%, -50%);
+    }
+}
